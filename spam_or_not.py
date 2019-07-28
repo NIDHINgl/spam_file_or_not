@@ -25,6 +25,7 @@ for i in arr:
 	    letters = string.ascii_lowercase
 	    return ''.join(random.choice(letters) for j in range(stringLength))+".txt"
 
+
 	def saveFile(path):
 
 		file_name = randomString(4)
@@ -40,6 +41,7 @@ for i in arr:
 				for line in old_file:
 					new_file.write(line)
 
+					
 	def path(path):
         #check whether the directory is exist or not. If not exist creating new one
 		if os.path.isdir(path):
