@@ -34,7 +34,7 @@ for i in arr:
 		if os.path.exists(file):
 			file_name = randomString(4)
         #creating new file
-		create_file = open(file, "x")
+		create_file = open(file, "w")
 		#copying content from old file to new one
 		with open(current_dir+"/files/"+i) as old_file:
 			with open(file, "w") as new_file:
